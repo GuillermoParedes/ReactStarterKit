@@ -20,9 +20,9 @@ const Root = (props) => {
       <App>
         <Switch>    
           <Route exact path="/" render={() => (
-            <Redirect to="/_console" />
+            <Redirect to="/_home" />
           )}/>
-          <Route exact path="/_console" component={Home} />
+          <Route exact path="/_home" component={Home} />
           <Route path="*" component={NotFound} />
         </Switch>
       </App>

@@ -23,9 +23,9 @@ class Header extends Component {
           <div className="container-fluid">
             <div className="navbar-holder d-flex align-items-center justify-content-between">
               <div className="navbar-header">
-                <a href="index.html" className="navbar-brand">
+                <a href="/" className="navbar-brand">
                 <div className="brand-text brand-big">
-                  <span>Server </span><strong>Browser</strong>
+                  <span>React </span><strong>StarterKit</strong>
                 </div>
                 <div className="brand-text brand-small"><strong>Server Browser</strong></div></a>
                   <a id="toggle-btn"  className="menu-btn active">
@@ -33,11 +33,8 @@ class Header extends Component {
                   </a>
               </div>
               <ul className="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                <li className="nav-item d-flex align-items-center">
-                  <a id="search" ><i className="fa fa-search" /></a>
-                </li>
                 <li className="nav-item">
-                  <a href="https://github.com/mycodebad" className="nav-link logout">Repositorio
+                  <a href="https://github.com/GuillermoParedes/ReactStarterKit" className="nav-link logout">Repositorio
                     <i className="fa fa-github" />
                   </a>
                 </li>
