@@ -5,8 +5,9 @@
  */
 
 import React from 'react';
-import './not-found.scss'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import './not-found.scss';
+
 
 const NotFound = () => {
   return (

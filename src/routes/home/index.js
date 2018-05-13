@@ -9,10 +9,6 @@ import PropTypes from 'prop-types';
 import './home.scss';
 
 class Home extends Component {
-  constructor (props) {
-    super(props);
-    
-  }
   render() {
     return (
       <div className="containerHome">

@@ -5,9 +5,18 @@
  */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+
 import './header.scss';
 
 class Header extends Component {
+  openNavigation (event) {
+    event.preventDefault();
+    if (this.props.openNavigation !== null) {
+      this.props.openNavigation()
+    }
+  }
   render() {
     return (
       <header className="header">
@@ -27,8 +36,8 @@ class Header extends Component {
                 <div className="brand-text brand-big">
                   <span>React </span><strong>StarterKit</strong>
                 </div>
-                <div className="brand-text brand-small"><strong>Server Browser</strong></div></a>
-                  <a id="toggle-btn"  className="menu-btn active">
+                <div className="brand-text brand-small"><strong>React StarterKit</strong></div></a>
+                  <a id="toggle-btn"  className="menu-btn active" onClick={(event) => this.openNavigation(event)}>
                     <span /><span /><span />
                   </a>
               </div>
@@ -47,6 +56,8 @@ class Header extends Component {
   }
 }
 
-Header.propTypes = {};
+Header.propTypes = {
+  openNavigation: PropTypes.func
+};
 
 export default Header;
