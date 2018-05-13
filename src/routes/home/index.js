@@ -29,7 +29,7 @@ class Home extends Component {
                 <div className="success-actions">
                   
                   <a href="https://github.com/mycodebad" className="btn btn-default btn-lg">
-                    <span className="glyphicon glyphicon-envelope" /> Contact Support
+                    <span className="glyphicon glyphicon-envelope" /> Contact me: GD/Guillermo David
                   </a>
                 </div>
               </div>
