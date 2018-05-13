@@ -18,8 +18,21 @@ class Home extends Component {
       <div className="containerHome">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              
+            <div className="col-md-12">
+              <div className="success-template">
+                <h1>
+                  hi!</h1>
+
+                <div className="success-details">
+                  Welcome to Starter kit with React.JS
+                </div>
+                <div className="success-actions">
+                  
+                  <a href="https://github.com/mycodebad" className="btn btn-default btn-lg">
+                    <span className="glyphicon glyphicon-envelope" /> Contact Support
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
