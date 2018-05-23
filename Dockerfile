@@ -5,18 +5,20 @@ FROM node:8
 # The base node image sets a very verbose log level.
 ENV NPM_CONFIG_LOGLEVEL warn
 
-# Install `serve` to run the application.
-RUN npm install -g serve
+# Create folder
+RUN mkdir -p /usr/local/app
 
-# Set the command to start the node server.
-CMD serve -s build
+# Copy files
+COPY . /usr/local/app
 
-# Tell Docker about the port we'll run on.
-EXPOSE 5000
+# Workdir job
+WORKDIR /usr/local/app
 
+# Install dependencies
+RUN npm install
 
-# Copy all local files into the image.
-COPY . .
+# Exponent port 3030
+EXPOSE 3030
 
-# Build for production
-RUN npm run build --production
+# Run project
+CMD npm run start
